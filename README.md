@@ -21,9 +21,9 @@ Image classification is a fundamental task in computer vision where an input ima
 
 ## PROGRAM
 
-### Name: HEMNATH R
+### Name: THRINESH ROYAL
 
-### Register Number: 212224240057
+### Register Number: 212223230226
 
 ```python
 import torch
@@ -96,8 +96,8 @@ if torch.cuda.is_available():
     model.to(device)
 
 # Print model summary
-print('Name: HEMNATH R')
-print('Register Number: 212224240057')
+print('Name: THRINESH ROYAL')
+print('Register Number: 212223230226')
 summary(model, input_size=(1, 28, 28))
 
 # Initialize model, loss function, and optimizer
@@ -117,8 +117,8 @@ def train_model(model, train_loader, num_epochs=3):
             optimizer.step()
             running_loss += loss.item()
 
-        print('Name: HEMNATH R')
-        print('Register Number: 212224240057')
+        print('Name: THRINESH ROYAL')
+        print('Register Number: 212223230226')
         print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {running_loss/len(train_loader):.4f}')
 
 
@@ -143,15 +143,15 @@ def test_model(model, test_loader):
             all_labels.extend(labels.cpu().numpy())
 
     accuracy = correct / total
-    print('Name: HEMNATH R')
-    print('Register Number: 212224240057')
+    print('Name: THRINESH ROYAL')
+    print('Register Number: 212223230226')
     print(f'Test Accuracy: {accuracy:.4f}')
 
     # Compute confusion matrix
     cm = confusion_matrix(all_labels, all_preds)
     plt.figure(figsize=(8, 6))
-    print('Name: HEMNATH R')
-    print('Register Number: 212224240057')
+    print('Name: THRINESH ROYAL')
+    print('Register Number: 212223230226')
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=test_dataset.classes, yticklabels=test_dataset.classes)
     plt.xlabel('Predicted')
     plt.ylabel('Actual')
@@ -159,8 +159,8 @@ def test_model(model, test_loader):
     plt.show()
 
     # Print classification report
-    print('Name: HEMNATH R')
-    print('Register Number: 212224240057')
+    print('Name: THRINESH ROYAL')
+    print('Register Number: 212223230226')
     print("Classification Report:")
     print(classification_report(all_labels, all_preds, target_names=test_dataset.classes))
 
@@ -179,8 +179,8 @@ def predict_image(model, image_index, dataset):
     class_names = dataset.classes
 
     # Display the image
-    print('Name: HEMNATH R')
-    print('Register Number: 212224240057')
+    print('Name: THRINESH ROYAL')
+    print('Register Number: 212223230026')
     plt.imshow(image.squeeze(), cmap="gray")
     plt.title(f'Actual: {class_names[label]}\nPredicted: {class_names[predicted.item()]}')
     plt.axis("off")
@@ -198,22 +198,26 @@ predict_image(model, image_index=80, dataset=test_dataset)
 
 ## Training Loss per Epoch
 
-<img width="493" height="207" alt="image" src="https://github.com/user-attachments/assets/1d68f24a-a056-4cff-a160-c001b0e2d586" />
+<img width="365" height="230" alt="image" src="https://github.com/user-attachments/assets/e01449e6-c8e5-4a4a-9581-c86625ca3d6b" />
+
 
 
 ## Confusion Matrix
 
-<img width="996" height="791" alt="image" src="https://github.com/user-attachments/assets/3ed0a66c-e2cb-410f-b4c3-89f58a7c3047" />
+<img width="797" height="701" alt="image" src="https://github.com/user-attachments/assets/4e01c930-d315-4b88-b311-eb343960dd92" />
+
 
 
 ## Classification Report
 
-<img width="587" height="412" alt="image" src="https://github.com/user-attachments/assets/754ecccf-3c4f-4462-b016-c0e5823a8ba7" />
+<img width="731" height="430" alt="image" src="https://github.com/user-attachments/assets/86f2ea7d-91d6-4ce5-8960-f07f5babeee2" />
+
 
 
 ### New Sample Data Prediction
 
-<img width="605" height="561" alt="image" src="https://github.com/user-attachments/assets/4ae01da0-86d7-4698-bebb-a4e96c13503d" />
+<img width="663" height="630" alt="image" src="https://github.com/user-attachments/assets/0e180c68-0ad9-414b-882d-e8025c945a09" />
+
 
 
 ## RESULT
